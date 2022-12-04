@@ -14,8 +14,9 @@
         <center>
           <h1>Add Post</h1>
 
-          <form method="post" action="/add_post">
-          		<input type="text" name="caption" placeholder="Caption">
+          <form method="post" action="/add_post" enctype="multipart/form-data">
+				<input type="file" name="photo" placeholder="Photo" />
+          		<input type="text" name="caption" placeholder="Caption" />
           		<input type="submit" name="Submit">
           </form>
           
